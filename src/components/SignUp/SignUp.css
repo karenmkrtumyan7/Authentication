@@ -1,0 +1,41 @@
+#sign-up h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#sign-up input{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    color: black;
+    width: 60%;    
+}
+
+#sign-up button {
+    background-color: white;
+    width: 20%;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#sign-up .link {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#sign-up .invalid-input {
+    border: 1.5px solid red;
+}
+
+#sign-up .validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,61 @@
+.account-activation-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(240.64deg, #5200FF 0%, rgba(92, 0, 248, 0.942708) 0.01%, #FF008A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-activation-wrapper main {
+    box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 81px;
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-activation-wrapper main h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.account-activation-wrapper main p {
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.account-activation-wrapper main button {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 186px;
+    height: 42px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.account-activation-wrapper main button a {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
