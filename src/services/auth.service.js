@@ -10,7 +10,7 @@ function signIn(requestBody) {
         }
     }
 
-    return fetch("http://localhost:8000/auth/signIn", requestOptions)
+    return fetch("http://localhost:8000/auth/signin", requestOptions)
                 .then(checkResponseStatus)
                 .then(({ token, userId }) => {
                     Cookies.set("token", token);
@@ -27,7 +27,7 @@ function signUp(requestBody)  {
         }
     }
 
-    return fetch("http://localhost:8000/auth/signUp", requestOptions)
+    return fetch("http://localhost:8000/auth/signup", requestOptions)
                 .then(checkResponseStatus)
 }
 
@@ -40,11 +40,11 @@ function checkToken() {
     const requestOptions = {
         headers: {
                 "Content-Type": "application/json",
-                "auth" : `Bearer ${Cookies.get("token")}`
+                authorization : `Bearer ${Cookies.get("token")}`,
         }
     }
     
-    return fetch('http://localhost:8000/auth/checktoken', requestOptions)
+    return fetch(`http://localhost:8000/user/current/${Cookies.get("userId")}`, requestOptions)
         .then(checkResponseStatus)
         .then(({ token, userId }) => { 
                 Cookies.set("token", token);

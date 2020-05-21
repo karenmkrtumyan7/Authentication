@@ -8,15 +8,15 @@ export const signUp = (state = initialState, action) => {
     switch(action.type) {
         case authConstants.REGISTER_REQUEST: 
             return { 
-                registered : false,
+                registered: false,
             }
         case authConstants.REGISTER_SUCCESS:
             return {
-                registered : true,
+                registered: true,
             }
         case authConstants.REGISTER_FAILURE:
             return {
-                loggedIn: false,
+                registered: false,
             }
 
         default: return state;

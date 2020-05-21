@@ -2,7 +2,6 @@ import { authConstants, validationConstants } from "../constants";
 
 const initialState = {
     msg: null,
-    type: null,
 }
 
 export const validation = (state = initialState, action) => {

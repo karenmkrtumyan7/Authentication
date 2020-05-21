@@ -12,10 +12,8 @@ const signIn = (userName, password) => {
     authService.signIn({ userName, password })
         .then( () => dispatch(success()) )
         .catch((error) => {
-            if (error.hasOwnProperty("user")) {
-                if (!error.user.active) {
+            if (!error?.user?.verified && error.user) { 
                     return dispatch({ type: authConstants.REGISTER_SUCCESS });
-                }
             }
             dispatch(failure(error));
         });

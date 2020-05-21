@@ -15,7 +15,7 @@ function ActivationAlertContainer(props) {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        signUpRequest: () => dispatch(signUpRequest())
+        signUpRequest: () => dispatch(signUpRequest()),
     }
 }
 

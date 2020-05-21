@@ -25,7 +25,7 @@ function AuthRoutes({ loggedIn, registered }) {
                 <Route path="/">
                     <button onClick={ signOut }>OUT</button>
                 </Route>
-                <Route path="/activate:id">
+                <Route path="/verify/:id">
                     <ActivationSuccess />
                 </Route>
             </Switch>
@@ -44,10 +44,10 @@ function AuthRoutes({ loggedIn, registered }) {
                 </Authentication>
             </Route>
             <Route path="/activation-alert">
-                    <ActivationAlert />
+                <ActivationAlert />
             </Route>
-            <Route path="/activate/:id">
-                    <ActivationSuccess />
+            <Route path="/verify/:id">
+                <ActivationSuccess />
             </Route>
             <Redirect to="/sign-in"/>
         </Switch>

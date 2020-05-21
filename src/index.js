@@ -6,14 +6,17 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './helpers/store';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 ReactDOM.render(
   <Provider store = { store }>
-    <Router>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Router>
+    </ErrorBoundary>
   </Provider>,
   document.getElementById('root')
 );

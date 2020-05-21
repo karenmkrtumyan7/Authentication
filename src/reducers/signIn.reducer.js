@@ -14,7 +14,6 @@ export const signIn = (state = initialState, action) => {
                 loggedIn: false
             }
         case authConstants.LOGIN_SUCCESS:
-        // case authConstants.REGISTER_SUCCESS:
             return {
                 loggedIn: true
             }
